@@ -1,9 +1,48 @@
 body {
-    background-color: lightpink;
-    text-align: center;
-    padding-top: 40px;
-    padding-right: 30px;
-    padding-bottom: 40px;
-    padding-left: 30px;
+  background-color: lightpink;
+  text-align: center;
+  padding-top: 40px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+  padding-left: 30px;
 }
 
+.jiggle {
+  animation-name: jiggle;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  transform-origin: center;
+  transform-box: fill-box;
+  animation-iteration-count: 3;
+}
+
+@keyframes jiggle {
+  0% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(15deg);
+  }
+}
+.heart {
+  animation-name: heart-up;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes heart-up {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-80vh);
+    opacity: 0;
+  }
+}
