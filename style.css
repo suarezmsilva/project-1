@@ -1,10 +1,9 @@
 body {
   background-color: lightpink;
   text-align: center;
-  padding-top: 40px;
-  padding-right: 30px;
-  padding-bottom: 40px;
-  padding-left: 30px;
+  padding-right: 100px;
+  padding-bottom: 20px;
+  padding-left: 100px;
 }
 
 .jiggle {
@@ -47,13 +46,13 @@ body {
   }
 }
 #fortune {
-  animation: fortune 5s infinite linear;
+  animation: fortune 3s infinite linear;
   transform-origin: center;
   transform-box: fill-box;
 }
 
 @keyframes fortune{
   0% {transform: translate(0, 0px);}
-  50% {transform: translate(0, 15px);}
+  50% {transform: translate(0, 30px);}
   100% {transform: translate(0, -0px);}
 }
