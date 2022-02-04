@@ -46,3 +46,14 @@ body {
     opacity: 0;
   }
 }
+#fortune {
+  animation: fortune 5s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes fortune{
+  0% {transform: translate(0, 0px);}
+  50% {transform: translate(0, 15px);}
+  100% {transform: translate(0, -0px);}
+}
